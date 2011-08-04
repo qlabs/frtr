@@ -1,0 +1,55 @@
+.top
+  .ribbon_header
+    .ribbon 
+      record your frtr here
+    .shadow_cover
+    .tail
+  .clear
+  #user_show
+    #framey_content
+      #instructions
+        %span.step{:id => "step_1"}
+          %span.number 1. 
+          %span.pink_text record
+          / %span.dark_text it
+        %span.step{:id => "step_2"}
+          %span.number 2. 
+          %span.pink_text publish
+          / %span.dark_text it
+        %span.step{:id => "step_3"}          
+          %span.number 3. 
+          %span.pink_text tweet
+          / %span.dark_text it
+      #message_area 
+        #flash_message
+        #flash_warning
+      #recorder_post_container  
+        #framey_post
+          #tweet_prompt
+            Your video is being published! Now, share it on Twitter or 
+            %a{:href => "javascript: new_video()"} record a new video. 
+          #tweet_form
+            - form_tag() do
+              = text_area_tag 'twitter_text', nil, :class => "twitter_text_area"
+            .tweet_button  
+              %a.tweet_button_link{:href => "javascript: tweet_video()"}
+                %img{:src => "/images/bird_button.png"}
+                .tweet_button_text
+                  Press to Tweet
+            #tweet_extra
+              %span#follow_checkbox
+                = check_box_tag("follow_frttr", "yes", true)
+                Follow 
+                %a{:href => "http://www.twitter.com/frtr_me"}@frtr_me 
+                on Twitter
+              %span.counter{:id => "counter"}
+        #framey_recorder
+          = render_recorder({ :id => "recorder",
+                              :max_time => 60,
+                              :session_data => {:user_uid => @user.uid, :video_uid => @video_uid} })        
+
+.bottom
+  .popular_title My frtrs
+  .popular_divider
+  #my_videos
+    = render :partial => "videos"

@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %link{:rel => "icon", :href => "/images/favicon.png", :type => "image/png"}
+    %link{:rel => "shortcut icon", :href => "/images/favicon.png", :type => "image/png"}
+    = stylesheet_link_tag :all, "reset-min"
+    = javascript_include_tag :defaults
+    = javascript_include_tag "jquery.min.js"
+    = javascript_include_tag "swfobject"
+    = javascript_include_tag "pagination"
+    = javascript_include_tag "framey"
+    = javascript_include_tag "jquery.simplyCountable"
+    = javascript_include_tag "jquery.popupwindow"
+    = javascript_include_tag "http://platform.twitter.com/widgets.js"
+  
+    %title Frtr
+    = csrf_meta_tag
+    
+  %body
+    #content
+      .header
+        .center
+          %a{:href => "/"}
+            %img.logo{:src => "/images/logo.png"}
+              
+          .loginWrapper
+            - if !current_user
+              =link_to "log in", "/auth/twitter"
+              &bull;
+              =link_to "sign up", "/auth/twitter"
+            -else
+              = link_to "record me", "/users/#{current_user.twitter_handle}"
+              &bull;
+              =link_to "log out", "/logout"
+        .clear
+      .mainContent
+        .center{:id => "frtr_body"}
+          = yield
+        

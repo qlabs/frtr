@@ -1,0 +1,602 @@
+3.0.25 (Classy Cassidy)
+37387c77be6b6976ac6259f5426843a077cdb1e7
+o:Sass::Tree::RootNode
+:@has_childrenT:
+@linei:@options{:always_checkT:css_filename"%public/stylesheets//homepage.css:
+cacheT:template_location[["public/stylesheets/sass/"public/stylesheets/:
+style:nested:load_paths[".@
+:cache_location"./.sass-cache:full_exceptionT:line_comments0:syntax:	scss:css_location"./public/stylesheets:property_syntax0:always_updateF:filename"*public/stylesheets/sass/homepage.scss:@template"/*@import "mixins";
+
+@font-face {
+ font-family:"CTMercuriusStd-MediumItalic";
+ src:url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf');
+ src:local("CTMercuriusStd-MediumItalic"), url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+ font-family:"DINCond";
+ src:url('/fonts/DINCond/DINConReg.ttf');
+ src:local("DINCond"), url('/fonts/DINCond/DINConReg.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConLig";
+ src:url('/fonts/DINCond/DINConLig.ttf');
+ src:local("DINConLig"), url('/fonts/DINCond/DINConLig.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConMed";
+ src:url('/fonts/DINCond/DINConMed.ttf');
+ src:local("DINConMed"), url('/fonts/DINCond/DINConMed.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConBol";
+ src:url('/fonts/DINCond/DINConBol.ttf');
+ src:local("DINConBol"), url('/fonts/DINCond/DINConBol.ttf') format('truetype');
+}
+
+
+#framey_recorder{
+  position: absolute;
+  overflow:hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+
+  width: 100%;
+  height: 128px;
+  border-bottom: 6px solid rgb(235,235,235);
+  background: url("/images/header.png") repeat-x;
+  
+  .center {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .logo {
+      width: 230px;
+      height: 128px;
+      background: url("/images/logo.png") no-repeat;
+      float: left;
+    }
+    
+    .loginWrapper {
+      color: white;
+      font-family: "CTMercuriusStd-MediumItalic";
+      font-size: 19px;
+      float: right;
+      width: 230px;
+      margin-right: 95px;
+      margin-top: 49px;
+      text-align: right;
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mainContent {
+  width: 100%;
+  height: 984px;
+  background: url("/images/bg.jpg") repeat-x;
+  
+  .center {
+    width: 940px;
+    height: 935px;
+    background: url("/images/fritter_words_in_bg.png") no-repeat bottom white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2px;
+    
+    .bottom {
+      height: 274px;
+      
+      .popular_title {
+        font-family: "DINCond";
+        font-size: 19px;
+        font-weight: bold;
+        width: 200px;
+        padding-left: 41px;
+        color: #3f3f3f;
+        
+      }
+      
+      .popular_divider {
+        width: 863px;
+        height: 8px;
+        margin-top: 8px;
+        background-color: #dadada;
+        margin-left: 41px;
+        @include border-radius(2px, 2px, 2px, 2px);
+        
+      }
+      
+      .popular_video {
+        float: left;
+        width: 350px;
+        height: 103px;
+        margin-left: 41px;
+        margin-top: 12px;
+        
+        .thumbnail {
+          float: left;
+          width: 134px;
+          height: 93px;
+          overflow:hidden;
+          border: 2px solid #cdcdcd;
+          
+          img {
+            width: 134px;
+          }
+        }
+        
+        .title {
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          font-family: Georgia;
+          font-size: 20px;
+          color: #9e3f84;
+        
+        }
+        .by {
+          font-family: Arial;
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          margin-top: 3px;
+          color: #5b5b5b;
+          font-size: 15px;
+          
+          a {
+            color: #058ec5;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        .when {
+          font-family: Arial;
+          padding-left: 8px;
+          float: left;
+          width: 190px;
+          margin-top: 7px;
+          color: black;
+          font-size: 12px;
+          
+        }
+        .views {
+          float: left;
+          width: 190px;
+          padding-left: 8px;
+          margin-top: 15px;
+          
+          .heart {
+            float: left;
+            width: 18px;
+            height: 17px;
+            background: url("/images/heart.png");
+          }
+          .num {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            float: left;
+            margin-left: 5px;
+            
+          }
+        }
+      }
+
+    }
+    
+    .top { 
+      width: 100%;
+      height: 542px;
+      padding-top: 60px;
+      
+      .left {
+        float: left;
+        width: 333px;
+        height: 445px;
+        position: relative;
+        
+        .camera {
+          width: 100%;
+          height: 100%;
+          background: url("/images/camera_n_ribbon.png") no-repeat;
+        }
+        
+        .ribbon_fold {
+          position: absolute;
+          bottom: 0px;
+          left: -24px;
+          width: 24px;
+          height: 82px;
+          background: url("/images/ribbon_fold.png");
+        }
+      }
+      
+      .right {
+        width: 560px;
+        float: right;
+        position: relative;
+      
+        .easily_record {
+          text-shadow: #ABABAB 0px 0px 5px;
+          font-family: "CTMercuriusStd-MediumItalic";
+          font-size: 60px;
+          color: #cc53ab;
+          width: 100%;
+          width: 475px;
+          position: relative;
+          line-height: 51px;
+          
+          
+          .twitter_bird {
+            width: 41px;
+            height: 26px;
+            background: url("/images/twitter_bird.png") no-repeat;
+            position: absolute;
+            right: 82px;
+            bottom: 15px;
+          }
+        }
+        .simplest_way  {
+          width: 100%;
+          margin-top: 5px;
+          font-family: "DINConLig";
+          font-size: 25px;
+          color: #949494;
+          
+          span {
+            color: black;
+          }
+          
+          a {
+            color: #199acd;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        .get_started {
+          width: 100%;
+          margin-top: 66px;
+          font-family: "DINCond";
+          font-size: 25px;
+          font-weight: bold;
+          
+        }
+        .dont_forget {
+          width: 100%;
+          font-family: "DINCond";
+          font-size: 15px;
+          font-weight: bold;
+          color: #9d9d9d;
+        }
+        .sign_up_button {
+          margin-top: 36px;
+          cursor: pointer;
+          width: 444px;
+          height: 139px;
+        }
+      }
+    }
+  }
+}*/:@children[o:Sass::Tree::CommentNode:@silent0;i:@value"/*@import "mixins";
+
+@font-face {
+ font-family:"CTMercuriusStd-MediumItalic";
+ src:url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf');
+ src:local("CTMercuriusStd-MediumItalic"), url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+ font-family:"DINCond";
+ src:url('/fonts/DINCond/DINConReg.ttf');
+ src:local("DINCond"), url('/fonts/DINCond/DINConReg.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConLig";
+ src:url('/fonts/DINCond/DINConLig.ttf');
+ src:local("DINConLig"), url('/fonts/DINCond/DINConLig.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConMed";
+ src:url('/fonts/DINCond/DINConMed.ttf');
+ src:local("DINConMed"), url('/fonts/DINCond/DINConMed.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConBol";
+ src:url('/fonts/DINCond/DINConBol.ttf');
+ src:local("DINConBol"), url('/fonts/DINCond/DINConBol.ttf') format('truetype');
+}
+
+
+#framey_recorder{
+  position: absolute;
+  overflow:hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+
+  width: 100%;
+  height: 128px;
+  border-bottom: 6px solid rgb(235,235,235);
+  background: url("/images/header.png") repeat-x;
+  
+  .center {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .logo {
+      width: 230px;
+      height: 128px;
+      background: url("/images/logo.png") no-repeat;
+      float: left;
+    }
+    
+    .loginWrapper {
+      color: white;
+      font-family: "CTMercuriusStd-MediumItalic";
+      font-size: 19px;
+      float: right;
+      width: 230px;
+      margin-right: 95px;
+      margin-top: 49px;
+      text-align: right;
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mainContent {
+  width: 100%;
+  height: 984px;
+  background: url("/images/bg.jpg") repeat-x;
+  
+  .center {
+    width: 940px;
+    height: 935px;
+    background: url("/images/fritter_words_in_bg.png") no-repeat bottom white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2px;
+    
+    .bottom {
+      height: 274px;
+      
+      .popular_title {
+        font-family: "DINCond";
+        font-size: 19px;
+        font-weight: bold;
+        width: 200px;
+        padding-left: 41px;
+        color: #3f3f3f;
+        
+      }
+      
+      .popular_divider {
+        width: 863px;
+        height: 8px;
+        margin-top: 8px;
+        background-color: #dadada;
+        margin-left: 41px;
+        @include border-radius(2px, 2px, 2px, 2px);
+        
+      }
+      
+      .popular_video {
+        float: left;
+        width: 350px;
+        height: 103px;
+        margin-left: 41px;
+        margin-top: 12px;
+        
+        .thumbnail {
+          float: left;
+          width: 134px;
+          height: 93px;
+          overflow:hidden;
+          border: 2px solid #cdcdcd;
+          
+          img {
+            width: 134px;
+          }
+        }
+        
+        .title {
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          font-family: Georgia;
+          font-size: 20px;
+          color: #9e3f84;
+        
+        }
+        .by {
+          font-family: Arial;
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          margin-top: 3px;
+          color: #5b5b5b;
+          font-size: 15px;
+          
+          a {
+            color: #058ec5;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        .when {
+          font-family: Arial;
+          padding-left: 8px;
+          float: left;
+          width: 190px;
+          margin-top: 7px;
+          color: black;
+          font-size: 12px;
+          
+        }
+        .views {
+          float: left;
+          width: 190px;
+          padding-left: 8px;
+          margin-top: 15px;
+          
+          .heart {
+            float: left;
+            width: 18px;
+            height: 17px;
+            background: url("/images/heart.png");
+          }
+          .num {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            float: left;
+            margin-left: 5px;
+            
+          }
+        }
+      }
+
+    }
+    
+    .top { 
+      width: 100%;
+      height: 542px;
+      padding-top: 60px;
+      
+      .left {
+        float: left;
+        width: 333px;
+        height: 445px;
+        position: relative;
+        
+        .camera {
+          width: 100%;
+          height: 100%;
+          background: url("/images/camera_n_ribbon.png") no-repeat;
+        }
+        
+        .ribbon_fold {
+          position: absolute;
+          bottom: 0px;
+          left: -24px;
+          width: 24px;
+          height: 82px;
+          background: url("/images/ribbon_fold.png");
+        }
+      }
+      
+      .right {
+        width: 560px;
+        float: right;
+        position: relative;
+      
+        .easily_record {
+          text-shadow: #ABABAB 0px 0px 5px;
+          font-family: "CTMercuriusStd-MediumItalic";
+          font-size: 60px;
+          color: #cc53ab;
+          width: 100%;
+          width: 475px;
+          position: relative;
+          line-height: 51px;
+          
+          
+          .twitter_bird {
+            width: 41px;
+            height: 26px;
+            background: url("/images/twitter_bird.png") no-repeat;
+            position: absolute;
+            right: 82px;
+            bottom: 15px;
+          }
+        }
+        .simplest_way  {
+          width: 100%;
+          margin-top: 5px;
+          font-family: "DINConLig";
+          font-size: 25px;
+          color: #949494;
+          
+          span {
+            color: black;
+          }
+          
+          a {
+            color: #199acd;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        .get_started {
+          width: 100%;
+          margin-top: 66px;
+          font-family: "DINCond";
+          font-size: 25px;
+          font-weight: bold;
+          
+        }
+        .dont_forget {
+          width: 100%;
+          font-family: "DINCond";
+          font-size: 15px;
+          font-weight: bold;
+          color: #9d9d9d;
+        }
+        .sign_up_button {
+          margin-top: 36px;
+          cursor: pointer;
+          width: 444px;
+          height: 139px;
+        }
+      }
+    }
+  }
+}*/:@lines[ ;@;[ 

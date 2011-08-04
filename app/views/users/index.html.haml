@@ -1,0 +1,27 @@
+.center
+  .top
+    #home_page
+      .left
+        %img{:src => "/images/camera.png", :class => "camera"}
+        .ribbon_header
+          .ribbon 
+            lights, camera, frtr!
+          .shadow_cover
+          .tail
+      .right
+        .easily_record
+          easily record & post video to twitter
+          .twitter_bird
+        .simplest_way 
+          The simplest way to record video for #{link_to "Twitter", "http://twitter.com"} has finally arrived.
+          %br
+          %span Point, click, shoot and post.
+          That’s pretty much it.
+        .get_started Get started by signing in with your Twitter account below.
+        .dont_forget (and dont forget to put on your game face when the camera’s running)
+        %a{:href => "/auth/twitter"}
+          .sign_up_button
+
+  .bottom
+
+    

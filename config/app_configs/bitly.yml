@@ -1,0 +1,12 @@
+test:
+  user_name: 
+  api_key: 
+
+
+development: 
+  user_name: 
+  api_key: 
+
+production:
+  user_name: 
+  api_key: 

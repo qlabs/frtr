@@ -1,0 +1,1280 @@
+3.0.25 (Classy Cassidy)
+fbddf96e4ea219640886435ffc06c01dce4cb0d7
+o:Sass::Tree::RootNode
+:@has_childrenT:
+@linei:@options{:always_checkT:css_filename"(public/stylesheets//application.css:
+cacheT:template_location[["public/stylesheets/sass/"public/stylesheets/:
+style:nested:load_paths[".@
+:cache_location"./.sass-cache:full_exceptionT:line_comments0:syntax:	scss:css_location"./public/stylesheets:property_syntax0:always_updateF:filename"-public/stylesheets/sass/application.scss:@template"4D@import "mixins";
+
+@font-face {
+ font-family:"CTMercuriusStd-MediumItalic";
+ src:url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf');
+ src:local("CTMercuriusStd-MediumItalic"), url('/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+ font-family:"DINCond";
+ src:url('/fonts/DINCond/DINConReg.ttf');
+ src:local("DINCond"), url('/fonts/DINCond/DINConReg.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConLig";
+ src:url('/fonts/DINCond/DINConLig.ttf');
+ src:local("DINConLig"), url('/fonts/DINCond/DINConLig.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConMed";
+ src:url('/fonts/DINCond/DINConMed.ttf');
+ src:local("DINConMed"), url('/fonts/DINCond/DINConMed.ttf') format('truetype');
+}
+
+@font-face {
+ font-family:"DINConBol";
+ src:url('/fonts/DINCond/DINConBol.ttf');
+ src:local("DINConBol"), url('/fonts/DINCond/DINConBol.ttf') format('truetype');
+}
+
+.ribbon_header{
+ display:block; 
+ height: 69px;
+ vertical-align: top;
+ z-index: 100;
+
+}
+#recorder{
+  float:left;
+}
+
+.shadow_cover{
+	position:relative;
+	background:#ba3a9d;
+	float:left;
+  display:inline;
+  height: 69px;
+  width: 20px;
+  line-height: 69px;
+  z-index: 1000; 
+}
+
+.ribbon{
+  vertical-align: middle;
+	position:relative;
+	color:#fff;
+	background:#ba3a9d;
+	font-size:1.5em;
+	float:left;
+  padding-left: 20px;
+  padding-right: 10px;
+	margin-left:-10px;
+	margin-bottom:20px;
+	text-shadow:0 -1px #8e156d;
+  display:inline;
+  height: 69px;
+  line-height: 69px;
+  font-family:"CTMercuriusStd-MediumItalic";
+  font-size: 30px;
+  color: #f7c5e9;
+  z-index: 100;
+
+  -moz-box-shadow:12px 5px 10px #ABABAB;
+  -webkit-box-shadow:12px 5px 10px #ABABAB;
+  -o-box-shadow:12px 5px 10px #ABABAB;
+  box-shadow:12px 5px 10px #ABABAB;
+}
+.ribbon:before{
+	content:" ";
+	background: url("/images/ribbon.png");
+	display:inline;
+	width:10px;
+	height:10px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	float: left;
+	margin-bottom:-10px;
+  z-index:1;
+  font-family:"CTMercuriusStd-MediumItalic";
+}
+.tail{
+  height:69px;
+  width:35px;
+  float:left;
+  background: url("/images/tail.png") no-repeat;
+  z-index: 99;
+  -moz-box-shadow:-12px 5px 10px #ABABAB;
+  -webkit-box-shadow:-12px 5px 10px #ABABAB;
+  -o-box-shadow:-12px 5px 10px #ABABAB;
+  box-shadow:-12px 5px 10px #ABABAB;
+  margin-bottom: 20px;
+  position: relative;
+
+
+}
+
+#message_area{
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#flash_message{
+  text-align: center;
+  width: 400px;
+  background-color: #45beee;
+  font-family: DINConBol;
+  font-size: 20px;
+  color: #5f5f5f;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -30px;
+  @include border-radius(5px,5px,5px,5px);
+  visibility: hidden;
+}
+
+#paginator{
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial;
+}
+
+#flash_warning{
+  text-align: center;
+  width: 400px;
+  background-color: #fdf698;
+  font-family: DINConBol;
+  font-size: 20px;
+  color: #5f5f5f;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -30px;
+  @include border-radius(5px,5px,5px,5px);
+  visibility: hidden;  
+}
+
+
+.video_info{
+  float: left;
+  width: 375px;
+  margin-left: 41px;
+  margin-top: 12px;
+  display: inline;
+  a {
+    color: #1f9fd1;
+    text-decoration: none;
+  }
+}
+
+#videos_container{
+  height: 250px;
+}        
+           
+.video_twitter_text{
+ font-family: Georgia;
+ font-size: 13px;
+ color: #9e3f84; 
+}
+.video_age{ 
+  font-family: Arial;
+  font-size: 10px;
+  color: #5b5b5b;
+  margin-bottom: 15px;
+}
+
+.video_thumbnail{
+  float: left;
+  display: inline;
+  margin-right: 10px;
+
+  
+  img {
+    border: 5px solid #cdcdcd;
+    height: 85px;
+    width: 114px;
+  }
+}
+
+.video_stats{
+  vertical-align: text-bottom;
+  font-family: Arial;
+  font-size: 10px;
+  color: #000000;
+}
+
+
+
+/* Tweet text form*/
+form {
+  display: inline;
+}
+
+
+a {
+  color: #949494;
+  text-decoration: none;
+}
+#tweet_extra{
+  width: 350px;
+}
+#tweet_prompt{
+  text-align: center;
+  width: 350px;
+  font-family: DINCond;
+  font-size: 20px;
+  margin-bottom: 10px;
+  .light_text{
+   color: #949494; 
+  }
+}
+
+#follow_checkbox{
+  font-family: Arial;
+  font-size: 10px;
+  display: inline;
+  float: left;
+
+}
+
+#framey_post{
+  margin-bottom: 150px;
+}
+
+.pagination{
+  text-align: center;
+  font-family: "DINConBol";
+  font-size: 20px;
+  
+  
+  em{
+   color:#fff; 
+   width: 27px;
+   height: 32px;
+   background: url("/images/current_page_bg.png") no-repeat;
+   text-align: center;
+   padding: 10px;
+  }
+  
+  .previous_page{
+    color: #a5a5a5;
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+  .next_page{
+    color: #a5a5a5;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  
+  a{
+    margin-left:10px;
+    margin-right:10px;
+    color: #000;
+    .previous_page{
+      color: #a5a5a5;
+    }
+
+    .next_page{
+      color: #a5a5a5;
+    }
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a img{
+ border: 0px; 
+}
+
+.header {
+
+  width: 100%;
+  height: 128px;
+  border-bottom: 6px solid rgb(235,235,235);
+  background: url("/images/header.png") repeat-x;
+  
+  .center {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .logo {
+/*      width: 230px;
+      height: 128px;*/
+/*      background: url("/images/logo.png") no-repeat;*/
+      float: left;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    
+    .loginWrapper {
+      color: white;
+      font-family: "CTMercuriusStd-MediumItalic";
+      font-size: 19px;
+      float: right;
+      width: 230px;
+      margin-right: 95px;
+      margin-top: 49px;
+      text-align: right;
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mainContent {
+  
+  width: 100%;
+  height: 984px;
+  background: url("/images/bg.jpg") repeat-x;
+  
+  .clear{
+    clear: both;
+  }
+
+  .counter{
+    float: right;
+    font-family: Arial;
+    font-size: 10px;
+    color: #a6a6a6;
+  }
+  
+  .twitter_text_area{
+    vertical-align: top;
+    padding: 10px;
+    border: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 65px;
+    -moz-box-shadow: 0px 0px 7px #45beee; /* Firefox 3.6 and earlier */
+    -webkit-box-shadow: 0px 0px 7px #45beee; /* Safari */
+    box-shadow: 0px 0px 7px #45beee;
+    font-family: DINConBol;
+    font-size: 15px;
+    color: #5f5f5f; 
+    display: inline;
+    float: left;
+    
+  }
+  
+  input[type="checkbox"]{
+/*    padding:10px;
+    margin:5px;
+    cursor:pointer;
+    color:#ffffff;
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px;
+*/  
+    width: 16px;
+    height: 16px;
+    background: url("/images/checkbox.png") no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+  }
+  
+  .center {
+    width: 940px;
+    height: 955px;
+    background: url("/images/fritter_words_in_bg.png") no-repeat bottom white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2px;
+    
+    .num {
+      font-family: Arial;
+      font-size: 12px;
+      color: black;
+      float: left;
+      
+    }
+    
+
+    .tweet_button{
+      float: left;
+      display: inline;
+      margin-bottom: 10px;
+      
+      a.tweet_button_link{
+        text-decoration: none;
+        font-family: Arial;
+        font-size: 10px;
+        color: #45beee;
+      }
+      
+      .tweet_button_text{
+        margin-left: 20px;
+        font-family: Arial;
+        font-size: 10px;
+        color: #45beee;
+      }
+    }
+    .heart {
+      float: left;
+      width: 18px;
+      height: 17px;
+      background: url("/images/heart.png");
+    }
+    
+    .when {
+      font-family: Arial;
+      padding-left: 8px;
+      float: left;
+      width: 190px;
+      margin-top: 7px;
+      color: black;
+      font-size: 12px;
+    }    
+    
+    .bottom {
+      height: 274px;
+      
+      #tweet_comment{
+        margin-left: 230px;
+        height: 150px;
+        form{
+          display: inline;
+        }
+        
+        #comment_extra{
+          width: 350px;
+          #counter{
+            float: right;
+            display: inline;
+          }
+        }
+
+        #user_name{
+          font-family: "DINConBol";
+          font-size: 20px;
+          color: #1f9fd1;
+          display: inline;
+        }
+        
+        #comment_area{
+          #text_area{
+            position: relative;
+            top-margin: -20px;
+            vertical-align: top;
+          }
+
+        }
+        
+        #disclaimer_text{
+          font-family: Arial;
+          font-size: 10px;
+          color: #000000;
+          display: block;
+        }
+        
+      }
+      
+      .popular_title {
+        font-family: "DINCond";
+        font-size: 19px;
+        font-weight: bold;
+        width: 200px;
+        padding-left: 41px;
+        color: #3f3f3f;
+        
+      }
+      
+      .popular_divider {
+        width: 863px;
+        height: 8px;
+        margin-top: 8px;
+        background-color: #dadada;
+        margin-left: 41px;
+        @include border-radius(2px, 2px, 2px, 2px);
+        
+      }
+      
+      .popular_video {
+        float: left;
+        width: 350px;
+        height: 103px;
+        margin-left: 41px;
+        margin-top: 12px;
+        
+        .thumbnail {
+          float: left;
+          width: 134px;
+          height: 93px;
+          overflow:hidden;
+          border: 2px solid #cdcdcd;
+          
+          img {
+            width: 134px;
+          }
+        }
+        
+        .title {
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          font-family: Georgia;
+          font-size: 20px;
+          color: #9e3f84;
+        
+        }
+        .by {
+          font-family: Arial;
+          float: left;
+          padding-left: 8px;
+          width: 190px;
+          margin-top: 3px;
+          color: #5b5b5b;
+          font-size: 15px;
+          
+          a {
+            color: #058ec5;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .views {
+          float: left;
+          width: 190px;
+          padding-left: 8px;
+          margin-top: 15px;
+          
+        }
+      }
+
+    }
+    
+    .top { 
+      width: 100%;
+
+      padding-top: 20px;
+      #home_page{
+        padding-top: 60px;
+      }
+      
+      #user_videos{
+        #user_info{
+          margin-right: 20px; 
+          margin-left: 20px;
+          height: 50px;
+          
+          #user_image{
+            display:inline;
+            float: left;
+            margin-right: 5px;
+          }
+        
+          #user_name{
+            font-family: Arial;
+            font-size: 15px;
+            color: #1f9fd1;
+
+            a {
+              color: #1f9fd1;
+              text-decoration: none;
+            }
+          }
+          
+          #user_stats{
+            margin-top: 20px;
+            font-family: Arial;
+            font-size: 10px;
+            color: #000000;
+          }
+          
+        }
+        
+        #videos_display{
+          
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff'); /* for IE */
+          background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#fff)); /* for webkit browsers */
+          background: -moz-linear-gradient(top,  #f3f3f3,  #fff); /* for firefox 3.6+ */
+          padding-top:20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          
+          .video_list_header{
+            background-color: #a9e7ff;
+            color: #0b5572;
+            display: block;
+
+            font-family: "DINConMed";
+            font-size: 24px;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+          }                    
+          
+        }
+        
+        
+      }
+      
+      #video_show{
+        #player_wrapper{
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff'); /* for IE */
+          background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#fff)); /* for webkit browsers */
+          background: -moz-linear-gradient(top,  #f3f3f3,  #fff); /* for firefox 3.6+ */
+          padding-top: 40px; 
+          padding-bottom: 40px;
+          padding-left: 290px;
+          
+          
+          #tweet_form{
+            margin-left: -45px;
+          }
+          
+        }
+        
+        #processing_video{
+          text-align: center;
+          font-family: Georgia;
+          font-size: 20px;
+          color: #9e3f84;
+          padding-top: 150px;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff'); /* for IE */
+          background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#fff)); /* for webkit browsers */
+          background: -moz-linear-gradient(top,  #f3f3f3,  #fff); /* for firefox 3.6+ */
+          
+        }
+        #display_twitter_text{
+          font-family: Georgia;
+          font-size: 20px;
+          color: #9e3f84;
+          text-align: center;
+          margin-left: -280px;
+          margin-bottom: 20px;
+
+        }
+        
+        #video_info{
+
+          margin-right:50px;          
+          #user_image{
+            float: left;
+            display: inline;
+            height: auto;
+            margin-left: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            img {
+              border: 5px solid #cdcdcd;
+            }
+            
+          }
+          
+          #video_age{
+            font-family: Arial;
+            font-size: 10px;
+            color: #000000; 
+            margin-bottom: 15px;
+          }
+          
+          #video_title{
+           font-family: Georgia;
+           font-size: 15px;
+           color: #9e3f84; 
+          }
+          
+          #video_byline{
+           font-family: Arial;
+           font-size: 11px;
+           color: #5b5b5b;
+           
+           a {
+             color: #058ec5;
+             text-decoration: none;
+           }
+          }
+          
+          
+          #video_likes{
+            font-family: Arial;
+            font-size: 12px;
+            color: #000000;
+            a {
+              text-decoration: none;
+            }
+          }
+          
+          #video_screen{
+            float: right;
+            margin-top: 0px;
+            display: inline;
+            margin-right: 10px;
+          }
+        }
+      }
+      
+      .left {
+        float: left;
+        width: 333px;
+        height: 445px;
+        position: relative;
+        
+        .camera{
+          margin-bottom: -6px;
+          z-index: 1;
+          position: relative;
+        }
+      }
+      
+      #user_show{
+        
+        #framey_content{
+         margin-top: 45px; 
+        }
+        
+        margin-left: 290px;
+        #recorder_post_container{
+          height: 400px;
+        } 
+                       
+        #framey_recorder{
+          position: relative;
+/*          height: 400px;*/
+          overflow: hidden;
+        }
+        
+        #instructions{
+          text-align: left;
+          margin-left: -75px;
+        	font-size:30px;
+          font-family:"CTMercuriusStd-MediumItalic";
+          
+          .number{
+            color: #a2a2a2;
+            display: inline;
+          }
+          
+          .pink_text{
+            color:#cc53ab;  
+            display: inline;
+/*            cc53ab*/
+          }
+          
+          .dark_text{
+            color:#505050;
+            display: inline;
+          }
+          
+        }
+        
+      }
+      
+      .right {
+        width: 560px;
+        float: right;
+        position: relative;
+      
+        .easily_record {
+          text-shadow: #ABABAB 0px 0px 5px;
+          font-family: "CTMercuriusStd-MediumItalic";
+          font-size: 60px;
+          color: #cc53ab;
+          width: 100%;
+          width: 475px;
+          position: relative;
+          line-height: 51px;
+          
+          
+          .twitter_bird {
+            width: 41px;
+            height: 26px;
+            background: url("/images/twitter_bird.png") no-repeat;
+            position: absolute;
+            right: 82px;
+            bottom: 15px;
+          }
+        }
+        .simplest_way  {
+          width: 100%;
+          margin-top: 5px;
+          font-family: "DINConLig";
+          font-size: 25px;
+          color: #949494;
+          
+          span {
+            color: black;
+          }
+          
+          a {
+            color: #199acd;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        .get_started {
+          width: 100%;
+          margin-top: 66px;
+          font-family: "DINConBol";
+          font-size: 25px;
+          font-weight: bold;
+          
+        }
+        .dont_forget {
+          width: 100%;
+          font-family: "DINCond";
+          font-size: 15px;
+          font-weight: bold;
+          color: #9d9d9d;
+        }
+
+        .sign_up_button {
+          margin-top: 36px;
+          cursor: pointer;
+          width: 445px;
+          height: 141px;
+          a {background: url("/images/twitter_button.png") no-repeat;}
+          background: url("/images/twitter_button.png") no-repeat;
+          
+        }
+        
+        
+        .sign_up_button:hover {
+          margin-top: 36px;
+          cursor: pointer;
+          width: 445px;
+          height: 141px;
+          background: url("/images/inverted_twitter_button.png") no-repeat;
+        }
+        
+      }
+    }
+  }
+}:@children['o:Sass::Tree::ImportNode
+:@imported_filename"mixins;i;@;0;[ o:Sass::Tree::DirectiveNode
+;T;i:@value"@font-face;@;[o:Sass::Tree::PropNode;i	:@prop_syntax:new:
+@name["font-family:
+@tabsi ;o:Sass::Script::String;"""CTMercuriusStd-MediumItalic":
+@type:identifier:@context:default;@;[ o;;i
+; ;!;"["src;#i ;o:Sass::Script::Funcall
+:
+@args[o;$
+;i
+;"7/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf;{ ;%:string;';(;i
+;""url;@&;';(;@;[ o;;i; ;!;"["src;#i ;o:Sass::Script::Operation:@operand2o;,;-o;)
+;*[o;$
+;i;"opentype;{ ;%;+;';(;i;""format;@2;';(;i:@operand1o;)
+;*[o;$
+;i;"7/fonts/CTMercurius/CTMercuriusStd-MediumItalic.otf;@2;%;+;';(;i;""url;@2;';(;@2:@operator:concat;';(;i;.o;)
+;*[o;$
+;i;" CTMercuriusStd-MediumItalic;@2;%;+;';(;i;""
+local;@2;';(;@2;/:
+comma;';(;@;[ o;
+;T;i;"@font-face;@;[o;;i; ;!;"["font-family;#i ;o;$;""DINCond";%;&;';(;@;[ o;;i; ;!;"["src;#i ;o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConReg.ttf;{ ;%;+;';(;i;""url;@O;';(;@;[ o;;i; ;!;"["src;#i ;o;,;-o;,;-o;)
+;*[o;$
+;i;"truetype;{ ;%;+;';(;i;""format;@[;';(;i;.o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConReg.ttf;@[;%;+;';(;i;""url;@[;';(;@[;/;0;';(;i;.o;)
+;*[o;$
+;i;"DINCond;@[;%;+;';(;i;""
+local;@[;';(;@[;/;1;';(;@;[ o;
+;T;i;"@font-face;@;[o;;i; ;!;"["font-family;#i ;o;$;""DINConLig";%;&;';(;@;[ o;;i; ;!;"["src;#i ;o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConLig.ttf;{ ;%;+;';(;i;""url;@x;';(;@;[ o;;i; ;!;"["src;#i ;o;,;-o;,;-o;)
+;*[o;$
+;i;"truetype;{ ;%;+;';(;i;""format;@;';(;i;.o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConLig.ttf;@;%;+;';(;i;""url;@;';(;@;/;0;';(;i;.o;)
+;*[o;$
+;i;"DINConLig;@;%;+;';(;i;""
+local;@;';(;@;/;1;';(;@;[ o;
+;T;i;"@font-face;@;[o;;i; ;!;"["font-family;#i ;o;$;""DINConMed";%;&;';(;@;[ o;;i; ;!;"["src;#i ;o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConMed.ttf;{ ;%;+;';(;i;""url;@ú;';(;@;[ o;;i; ;!;"["src;#i ;o;,;-o;,;-o;)
+;*[o;$
+;i;"truetype;{ ;%;+;';(;i;""format;@®;';(;i;.o;)
+;*[o;$
+;i;"!/fonts/DINCond/DINConMed.ttf;@®;%;+;';(;i;""url;@®;';(;@®;/;0;';(;i;.o;)
+;*[o;$
+;i;"DINConMed;@®;%;+;';(;i;""
+local;@®;';(;@®;/;1;';(;@;[ o;
+;T;i ;"@font-face;@;[o;;i!; ;!;"["font-family;#i ;o;$;""DINConBol";%;&;';(;@;[ o;;i"; ;!;"["src;#i ;o;)
+;*[o;$
+;i";"!/fonts/DINCond/DINConBol.ttf;{ ;%;+;';(;i";""url;@≈;';(;@;[ o;;i#; ;!;"["src;#i ;o;,;-o;,;-o;)
+;*[o;$
+;i#;"truetype;{ ;%;+;';(;i#;""format;@—;';(;i#;.o;)
+;*[o;$
+;i#;"!/fonts/DINCond/DINConBol.ttf;@—;%;+;';(;i#;""url;@—;';(;@—;/;0;';(;i#;.o;)
+;*[o;$
+;i#;"DINConBol;@—;%;+;';(;i#;""
+local;@—;';(;@—;/;1;';(;@;[ o:Sass::Tree::RuleNode;T;i&;#i ;@:
+@rule[".ribbon_header;[	o;;i'; ;!;"["display;#i ;o;$;"
+block;%;&;';(;@;[ o;;i(; ;!;"["height;#i ;o;$;"	69px;%;&;';(;@;[ o;;i); ;!;"["vertical-align;#i ;o;$;"top;%;&;';(;@;[ o;;i*; ;!;"["z-index;#i ;o;$;"100;%;&;';(;@;[ o;2;T;i-;#i ;@;3["#recorder;[o;;i.; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;2;T;i1;#i ;@;3[".shadow_cover;[o;;i2; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;;i3; ;!;"["background;#i ;o;$;"#ba3a9d;%;&;';(;@;[ o;;i4; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i5; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;i6; ;!;"["height;#i ;o;$;"	69px;%;&;';(;@;[ o;;i7; ;!;"["
+width;#i ;o;$;"	20px;%;&;';(;@;[ o;;i8; ;!;"["line-height;#i ;o;$;"	69px;%;&;';(;@;[ o;;i9; ;!;"["z-index;#i ;o;$;"	1000;%;&;';(;@;[ o;2;T;i<;#i ;@;3[".ribbon;[o;;i=; ;!;"["vertical-align;#i ;o;$;"middle;%;&;';(;@;[ o;;i>; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;;i?; ;!;"["
+color;#i ;o;$;"	#fff;%;&;';(;@;[ o;;i@; ;!;"["background;#i ;o;$;"#ba3a9d;%;&;';(;@;[ o;;iA; ;!;"["font-size;#i ;o;$;"
+1.5em;%;&;';(;@;[ o;;iB; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iC; ;!;"["padding-left;#i ;o;$;"	20px;%;&;';(;@;[ o;;iD; ;!;"["padding-right;#i ;o;$;"	10px;%;&;';(;@;[ o;;iE; ;!;"["margin-left;#i ;o:Sass::Script::Number;iE:@denominator_units[ :@numerator_units["px;iÒ;{ :@original"
+-10px;';(;@;[ o;;iF; ;!;"["margin-bottom;#i ;o;$;"	20px;%;&;';(;@;[ o;;iG; ;!;"["text-shadow;#i ;o;,;-o:Sass::Script::Color
+;iG;0;{ :@attrs{	:
+alphai:	blueir:redié:
+greeni;';(;iG;.o;,;-o;4;iG;5[ ;6["px;i˙;@Å;7"	-1px;';(;iG;.o;4;iG;5[ ;6[ ;i ;@Å;7"0;';(;@Å;/;0;';(;@Å;/;0;';(;@;[ o;;iH; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iI; ;!;"["height;#i ;o;$;"	69px;%;&;';(;@;[ o;;iJ; ;!;"["line-height;#i ;o;$;"	69px;%;&;';(;@;[ o;;iK; ;!;"["font-family;#i ;o;$;"""CTMercuriusStd-MediumItalic";%;&;';(;@;[ o;;iL; ;!;"["font-size;#i ;o;$;"	30px;%;&;';(;@;[ o;;iM; ;!;"["
+color;#i ;o;$;"#f7c5e9;%;&;';(;@;[ o;;iN; ;!;"["z-index;#i ;o;$;"100;%;&;';(;@;[ o;;iP; ;!;"["-moz-box-shadow;#i ;o;$;"12px 5px 10px #ABABAB;%;&;';(;@;[ o;;iQ; ;!;"["-webkit-box-shadow;#i ;o;$;"12px 5px 10px #ABABAB;%;&;';(;@;[ o;;iR; ;!;"["-o-box-shadow;#i ;o;$;"12px 5px 10px #ABABAB;%;&;';(;@;[ o;;iS; ;!;"["box-shadow;#i ;o;$;"12px 5px 10px #ABABAB;%;&;';(;@;[ o;2;T;iU;#i ;@;3[".ribbon:before;[o;;iV; ;!;"["content;#i ;o;$;"" ";%;&;';(;@;[ o;;iW; ;!;"["background;#i ;o;)
+;*[o;$
+;iW;"/images/ribbon.png;{ ;%;+;';(;iW;""url;@·;';(;@;[ o;;iX; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iY; ;!;"["
+width;#i ;o;$;"	10px;%;&;';(;@;[ o;;iZ; ;!;"["height;#i ;o;$;"	10px;%;&;';(;@;[ o;;i[; ;!;"["position;#i ;o;$;"absolute;%;&;';(;@;[ o;;i\; ;!;"["bottom;#i ;o;$;"0;%;&;';(;@;[ o;;i]; ;!;"["	left;#i ;o;$;"0;%;&;';(;@;[ o;;i^; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i_; ;!;"["margin-bottom;#i ;o;4;i_;5[ ;6["px;iÒ;{ ;7"
+-10px;';(;@;[ o;;i`; ;!;"["z-index;#i ;o;$;"1;%;&;';(;@;[ o;;ia; ;!;"["font-family;#i ;o;$;"""CTMercuriusStd-MediumItalic";%;&;';(;@;[ o;2;T;ic;#i ;@;3["
+.tail;[o;;id; ;!;"["height;#i ;o;$;"	69px;%;&;';(;@;[ o;;ie; ;!;"["
+width;#i ;o;$;"	35px;%;&;';(;@;[ o;;if; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;ig; ;!;"["background;#i ;o;,;-o;$
+;ig;"no-repeat;{ ;%;&;';(;ig;.o;)
+;*[o;$
+;ig;"/images/tail.png;@@;%;+;';(;ig;""url;@@;';(;@@;/;0;';(;@;[ o;;ih; ;!;"["z-index;#i ;o;$;"99;%;&;';(;@;[ o;;ii; ;!;"["-moz-box-shadow;#i ;o;,;-o;8
+;ii;0;{ ;9{	;:i;;i´;<i´;=i´;';(;ii;.o;,;-o;4;ii;5[ ;6["px;i;@R;7"	10px;';(;ii;.o;,;-o;4;ii;5[ ;6["px;i
+;@R;7"5px;';(;ii;.o;4;ii;5[ ;6["px;iÔ;@R;7"
+-12px;';(;@R;/;0;';(;@R;/;0;';(;@R;/;0;';(;@;[ o;;ij; ;!;"["-webkit-box-shadow;#i ;o;,;-o;8
+;ij;0;{ ;9{	;:i;;i´;<i´;=i´;';(;ij;.o;,;-o;4;ij;5[ ;6["px;i;@k;7"	10px;';(;ij;.o;,;-o;4;ij;5[ ;6["px;i
+;@k;7"5px;';(;ij;.o;4;ij;5[ ;6["px;iÔ;@k;7"
+-12px;';(;@k;/;0;';(;@k;/;0;';(;@k;/;0;';(;@;[ o;;ik; ;!;"["-o-box-shadow;#i ;o;,;-o;8
+;ik;0;{ ;9{	;:i;;i´;<i´;=i´;';(;ik;.o;,;-o;4;ik;5[ ;6["px;i;@Ñ;7"	10px;';(;ik;.o;,;-o;4;ik;5[ ;6["px;i
+;@Ñ;7"5px;';(;ik;.o;4;ik;5[ ;6["px;iÔ;@Ñ;7"
+-12px;';(;@Ñ;/;0;';(;@Ñ;/;0;';(;@Ñ;/;0;';(;@;[ o;;il; ;!;"["box-shadow;#i ;o;,;-o;8
+;il;0;{ ;9{	;:i;;i´;<i´;=i´;';(;il;.o;,;-o;4;il;5[ ;6["px;i;@ù;7"	10px;';(;il;.o;,;-o;4;il;5[ ;6["px;i
+;@ù;7"5px;';(;il;.o;4;il;5[ ;6["px;iÔ;@ù;7"
+-12px;';(;@ù;/;0;';(;@ù;/;0;';(;@ù;/;0;';(;@;[ o;;im; ;!;"["margin-bottom;#i ;o;$;"	20px;%;&;';(;@;[ o;;in; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;2;T;is;#i ;@;3["#message_area;[o;;it; ;!;"["height;#i ;o;$;"	40px;%;&;';(;@;[ o;;iu; ;!;"["margin-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;ix;#i ;@;3["#flash_message;[o;;iy; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;iz; ;!;"["
+width;#i ;o;$;"
+400px;%;&;';(;@;[ o;;i{; ;!;"["background-color;#i ;o;$;"#45beee;%;&;';(;@;[ o;;i|; ;!;"["font-family;#i ;o;$;"DINConBol;%;&;';(;@;[ o;;i}; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;i~; ;!;"["
+color;#i ;o;$;"#5f5f5f;%;&;';(;@;[ o;;i; ;!;"["margin-bottom;#i ;o;$;"	20px;%;&;';(;@;[ o;;i{; ;!;"["padding-top;#i ;o;$;"	10px;%;&;';(;@;[ o;;i|; ;!;"["padding-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;;i}; ;!;"["margin-left;#i ;o;4;i};5[ ;6["px;i›;{ ;7"
+-30px;';(;@;[ o:Sass::Tree::MixinNode
+;*[	o;4;i~;5[ ;6["px;i
+;{ ;7"5px;';(o;4;i~;5[ ;6["px;i
+;@;7"5px;';(o;4;i~;5[ ;6["px;i
+;@;7"5px;';(o;4;i~;5[ ;6["px;i
+;@;7"5px;';(;i~;""border-radius;@;[ o;;i; ;!;"["visibility;#i ;o;$;"hidden;%;&;';(;@;[ o;2;T;iÇ;#i ;@;3["#paginator;[o;;iÉ; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;iÑ; ;!;"["margin-top;#i ;o;$;"	50px;%;&;';(;@;[ o;;iÖ; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;2;T;ià;#i ;@;3["#flash_warning;[o;;iâ; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;iä; ;!;"["
+width;#i ;o;$;"
+400px;%;&;';(;@;[ o;;iã; ;!;"["background-color;#i ;o;$;"#fdf698;%;&;';(;@;[ o;;iå; ;!;"["font-family;#i ;o;$;"DINConBol;%;&;';(;@;[ o;;iç; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;ié; ;!;"["
+color;#i ;o;$;"#5f5f5f;%;&;';(;@;[ o;;iè; ;!;"["margin-bottom;#i ;o;$;"	20px;%;&;';(;@;[ o;;iê; ;!;"["padding-top;#i ;o;$;"	10px;%;&;';(;@;[ o;;ië; ;!;"["padding-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;;ií; ;!;"["margin-left;#i ;o;4;ií;5[ ;6["px;i›;{ ;7"
+-30px;';(;@;[ o;>
+;*[	o;4;iì;5[ ;6["px;i
+;{ ;7"5px;';(o;4;iì;5[ ;6["px;i
+;@ê;7"5px;';(o;4;iì;5[ ;6["px;i
+;@ê;7"5px;';(o;4;iì;5[ ;6["px;i
+;@ê;7"5px;';(;iì;""border-radius;@;[ o;;iî; ;!;"["visibility;#i ;o;$;"hidden;%;&;';(;@;[ o;2;T;iò;#i ;@;3[".video_info;[o;;iô; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iö; ;!;"["
+width;#i ;o;$;"
+375px;%;&;';(;@;[ o;;iõ; ;!;"["margin-left;#i ;o;$;"	41px;%;&;';(;@;[ o;;iú; ;!;"["margin-top;#i ;o;$;"	12px;%;&;';(;@;[ o;;iù; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;iû;#i ;@;3["a;[o;;iü; ;!;"["
+color;#i ;o;$;"#1f9fd1;%;&;';(;@;[ o;;i†; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i§;#i ;@;3["#videos_container;[o;;i•; ;!;"["height;#i ;o;$;"
+250px;%;&;';(;@;[ o;2;T;i®;#i ;@;3[".video_twitter_text;[o;;i©; ;!;"["font-family;#i ;o;$;"Georgia;%;&;';(;@;[ o;;i™; ;!;"["font-size;#i ;o;$;"	13px;%;&;';(;@;[ o;;i´; ;!;"["
+color;#i ;o;$;"#9e3f84;%;&;';(;@;[ o;2;T;i≠;#i ;@;3[".video_age;[	o;;iÆ; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iØ; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;i∞; ;!;"["
+color;#i ;o;$;"#5b5b5b;%;&;';(;@;[ o;;i±; ;!;"["margin-bottom;#i ;o;$;"	15px;%;&;';(;@;[ o;2;T;i¥;#i ;@;3[".video_thumbnail;[	o;;iµ; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i∂; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;i∑; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i∫;#i ;@;3["img;[o;;iª; ;!;"["border;#i ;o;$;"5px solid #cdcdcd;%;&;';(;@;[ o;;iº; ;!;"["height;#i ;o;$;"	85px;%;&;';(;@;[ o;;iΩ; ;!;"["
+width;#i ;o;$;"
+114px;%;&;';(;@;[ o;2;T;i¡;#i ;@;3[".video_stats;[	o;;i¬; ;!;"["vertical-align;#i ;o;$;"text-bottom;%;&;';(;@;[ o;;i√; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iƒ; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;i≈; ;!;"["
+color;#i ;o;$;"#000000;%;&;';(;@;[ o:Sass::Tree::CommentNode:@silent0;i ;"/* Tweet text form*/:@lines[ ;@;[ o;2;T;iÀ;#i ;@;3["	form;[o;;iÃ; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;i–;#i ;@;3["a;[o;;i—; ;!;"["
+color;#i ;o;$;"#949494;%;&;';(;@;[ o;;i“; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i‘;#i ;@;3["#tweet_extra;[o;;i’; ;!;"["
+width;#i ;o;$;"
+350px;%;&;';(;@;[ o;2;T;i◊;#i ;@;3["#tweet_prompt;[o;;iÿ; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;iŸ; ;!;"["
+width;#i ;o;$;"
+350px;%;&;';(;@;[ o;;i⁄; ;!;"["font-family;#i ;o;$;"DINCond;%;&;';(;@;[ o;;i€; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;i‹; ;!;"["margin-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i›;#i ;@;3[".light_text;[o;;iﬁ; ;!;"["
+color;#i ;o;$;"#949494;%;&;';(;@;[ o;2;T;i‚;#i ;@;3["#follow_checkbox;[	o;;i„; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i‰; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;iÂ; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iÊ; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;2;T;iÍ;#i ;@;3["#framey_post;[o;;iÎ; ;!;"["margin-bottom;#i ;o;$;"
+150px;%;&;';(;@;[ o;2;T;iÓ;#i ;@;3[".pagination;[o;;iÔ; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;i; ;!;"["font-family;#i ;o;$;""DINConBol";%;&;';(;@;[ o;;iÒ; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;2;T;iÙ;#i ;@;3["em;[o;;iı; ;!;"["
+color;#i ;o;$;"	#fff;%;&;';(;@;[ o;;iˆ; ;!;"["
+width;#i ;o;$;"	27px;%;&;';(;@;[ o;;i˜; ;!;"["height;#i ;o;$;"	32px;%;&;';(;@;[ o;;i¯; ;!;"["background;#i ;o;,;-o;$
+;i¯;"no-repeat;{ ;%;&;';(;i¯;.o;)
+;*[o;$
+;i¯;" /images/current_page_bg.png;@;%;+;';(;i¯;""url;@;';(;@;/;0;';(;@;[ o;;i˘; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;i˙; ;!;"["padding;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i˝;#i ;@;3[".previous_page;[o;;i˛; ;!;"["
+color;#i ;o;$;"#a5a5a5;%;&;';(;@;[ o;;iˇ; ;!;"["margin-left;#i ;o;$;"	10px;%;&;';(;@;[ o;;i ; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i;#i ;@;3[".next_page;[o;;i; ;!;"["
+color;#i ;o;$;"#a5a5a5;%;&;';(;@;[ o;;i; ;!;"["margin-left;#i ;o;$;"	10px;%;&;';(;@;[ o;;i; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i	;#i ;@;3["a;[
+o;;i
+; ;!;"["margin-left;#i ;o;$;"	10px;%;&;';(;@;[ o;;i; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;;i; ;!;"["
+color;#i ;o;$;"	#000;%;&;';(;@;[ o;2;T;i;#i ;@;3[".previous_page;[o;;i; ;!;"["
+color;#i ;o;$;"#a5a5a5;%;&;';(;@;[ o;2;T;i;#i ;@;3[".next_page;[o;;i; ;!;"["
+color;#i ;o;$;"#a5a5a5;%;&;';(;@;[ o;2;T;i;#i ;@;3["	body;[o;;i; ;!;"["margin;#i ;o;$;"0;%;&;';(;@;[ o;;i; ;!;"["padding;#i ;o;$;"0;%;&;';(;@;[ o;2;T;i;#i ;@;3["
+a img;[o;;i; ;!;"["border;#i ;o;$;"0px;%;&;';(;@;[ o;2;T;i!;#i ;@;3[".header;[
+o;;i#; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;i$; ;!;"["height;#i ;o;$;"
+128px;%;&;';(;@;[ o;;i%; ;!;"["border-bottom;#i ;o;,;-o;)
+;*[o;4;i%;5[ ;6[ ;iÎ;{ ;7"235;';(o;4;i%;5[ ;6[ ;iÎ;@ß;7"235;';(o;4;i%;5[ ;6[ ;iÎ;@ß;7"235;';(;i%;""rgb;@ß;';(;i%;.o;,;-o;$
+;i%;"
+solid;@ß;%;&;';(;i%;.o;4;i%;5[ ;6["px;i;@ß;7"6px;';(;@ß;/;0;';(;@ß;/;0;';(;@;[ o;;i&; ;!;"["background;#i ;o;,;-o;$
+;i&;"repeat-x;{ ;%;&;';(;i&;.o;)
+;*[o;$
+;i&;"/images/header.png;@¡;%;+;';(;i&;""url;@¡;';(;@¡;/;0;';(;@;[ o;2;T;i(;#i ;@;3[".center;[
+o;;i); ;!;"["
+width;#i ;o;$;"
+940px;%;&;';(;@;[ o;;i*; ;!;"["margin-left;#i ;o;$;"	auto;%;&;';(;@;[ o;;i+; ;!;"["margin-right;#i ;o;$;"	auto;%;&;';(;@;[ o;2;T;i-;#i ;@;3["
+.logo;[
+o;?;@0;i.;"1/*      width: 230px;
+      height: 128px;*/;A[ ;@;[ o;?;@0;i0;"=/*      background: url("/images/logo.png") no-repeat;*/;A[ ;@;[ o;;i1; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i2; ;!;"["margin-top;#i ;o;$;"	30px;%;&;';(;@;[ o;;i3; ;!;"["margin-left;#i ;o;$;"	30px;%;&;';(;@;[ o;2;T;i6;#i ;@;3[".loginWrapper;[o;;i7; ;!;"["
+color;#i ;o;$;"
+white;%;&;';(;@;[ o;;i8; ;!;"["font-family;#i ;o;$;"""CTMercuriusStd-MediumItalic";%;&;';(;@;[ o;;i9; ;!;"["font-size;#i ;o;$;"	19px;%;&;';(;@;[ o;;i:; ;!;"["
+float;#i ;o;$;"
+right;%;&;';(;@;[ o;;i;; ;!;"["
+width;#i ;o;$;"
+230px;%;&;';(;@;[ o;;i<; ;!;"["margin-right;#i ;o;$;"	95px;%;&;';(;@;[ o;;i=; ;!;"["margin-top;#i ;o;$;"	49px;%;&;';(;@;[ o;;i>; ;!;"["text-align;#i ;o;$;"
+right;%;&;';(;@;[ o;2;T;i@;#i ;@;3["a;[o;;iA; ;!;"["
+color;#i ;o;$;"
+white;%;&;';(;@;[ o;;iB; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;iE;#i ;@;3["a:hover;[o;;iF; ;!;"["text-decoration;#i ;o;$;"underline;%;&;';(;@;[ o;2;T;iL;#i ;@;3[".mainContent;[o;;iN; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;iO; ;!;"["height;#i ;o;$;"
+984px;%;&;';(;@;[ o;;iP; ;!;"["background;#i ;o;,;-o;$
+;iP;"repeat-x;{ ;%;&;';(;iP;.o;)
+;*[o;$
+;iP;"/images/bg.jpg;@`;%;+;';(;iP;""url;@`;';(;@`;/;0;';(;@;[ o;2;T;iR;#i ;@;3[".clear;[o;;iS; ;!;"["
+clear;#i ;o;$;"	both;%;&;';(;@;[ o;2;T;iV;#i ;@;3[".counter;[	o;;iW; ;!;"["
+float;#i ;o;$;"
+right;%;&;';(;@;[ o;;iX; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iY; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;iZ; ;!;"["
+color;#i ;o;$;"#a6a6a6;%;&;';(;@;[ o;2;T;i];#i ;@;3[".twitter_text_area;[o;;i^; ;!;"["vertical-align;#i ;o;$;"top;%;&;';(;@;[ o;;i_; ;!;"["padding;#i ;o;$;"	10px;%;&;';(;@;[ o;;i`; ;!;"["border;#i ;o;$;"0px;%;&;';(;@;[ o;;ia; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;;ib; ;!;"["margin-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;;ic; ;!;"["
+width;#i ;o;$;"
+350px;%;&;';(;@;[ o;;id; ;!;"["height;#i ;o;$;"	65px;%;&;';(;@;[ o;;ie; ;!;"["-moz-box-shadow;#i ;o;$;"0px 0px 7px #45beee;%;&;';(;@;[ o;?;@0;ie;""/* Firefox 3.6 and earlier */;A[ ;@;[ o;;if; ;!;"["-webkit-box-shadow;#i ;o;$;"0px 0px 7px #45beee;%;&;';(;@;[ o;?;@0;if;"/* Safari */;A[ ;@;[ o;;ig; ;!;"["box-shadow;#i ;o;$;"0px 0px 7px #45beee;%;&;';(;@;[ o;;ih; ;!;"["font-family;#i ;o;$;"DINConBol;%;&;';(;@;[ o;;ii; ;!;"["font-size;#i ;o;$;"	15px;%;&;';(;@;[ o;;ij; ;!;"["
+color;#i ;o;$;"#5f5f5f;%;&;';(;@;[ o;;ik; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;il; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;2;T;ip;#i ;@;3["input[type="checkbox"];[o;?;@0;iq;"ã/*    padding:10px;
+    margin:5px;
+    cursor:pointer;
+    color:#ffffff;
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px;
+*/;A[ ;@;[ o;;ix; ;!;"["
+width;#i ;o;$;"	16px;%;&;';(;@;[ o;;iy; ;!;"["height;#i ;o;$;"	16px;%;&;';(;@;[ o;;iz; ;!;"["background;#i ;o;,;-o;$
+;iz;"no-repeat;{ ;%;&;';(;iz;.o;)
+;*[o;$
+;iz;"/images/checkbox.png;@;%;+;';(;iz;""url;@;';(;@;/;0;';(;@;[ o;;i{; ;!;"["display;#i ;o;$;"
+block;%;&;';(;@;[ o;;i|; ;!;"["
+clear;#i ;o;$;"	left;%;&;';(;@;[ o;;i}; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;2;T;iÄ;#i ;@;3[".center;[o;;iÅ; ;!;"["
+width;#i ;o;$;"
+940px;%;&;';(;@;[ o;;iÇ; ;!;"["height;#i ;o;$;"
+955px;%;&;';(;@;[ o;;iÉ; ;!;"["background;#i ;o;,;-o;8
+;iÉ;0;{ ;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iÉ;.o;,;-o;$
+;iÉ;"bottom;@;;%;&;';(;iÉ;.o;,;-o;$
+;iÉ;"no-repeat;@;;%;&;';(;iÉ;.o;)
+;*[o;$
+;iÉ;"$/images/fritter_words_in_bg.png;@;;%;+;';(;iÉ;""url;@;;';(;@;;/;0;';(;@;;/;0;';(;@;;/;0;';(;@;[ o;;iÑ; ;!;"["margin-left;#i ;o;$;"	auto;%;&;';(;@;[ o;;iÖ; ;!;"["margin-right;#i ;o;$;"	auto;%;&;';(;@;[ o;;iÜ; ;!;"["margin-top;#i ;o;4;iÜ;5[ ;6["px;i˘;{ ;7"	-2px;';(;@;[ o;2;T;ià;#i ;@;3["	.num;[	o;;iâ; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iä; ;!;"["font-size;#i ;o;$;"	12px;%;&;';(;@;[ o;;iã; ;!;"["
+color;#i ;o;$;"
+black;%;&;';(;@;[ o;;iå; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;2;T;ië;#i ;@;3[".tweet_button;[
+o;;ií; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iì; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iî; ;!;"["margin-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;iñ;#i ;@;3["a.tweet_button_link;[	o;;ió; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;;iò; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iô; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;iö; ;!;"["
+color;#i ;o;$;"#45beee;%;&;';(;@;[ o;2;T;iù;#i ;@;3[".tweet_button_text;[	o;;iû; ;!;"["margin-left;#i ;o;$;"	20px;%;&;';(;@;[ o;;iü; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i†; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;i°; ;!;"["
+color;#i ;o;$;"#45beee;%;&;';(;@;[ o;2;T;i§;#i ;@;3[".heart;[	o;;i•; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i¶; ;!;"["
+width;#i ;o;$;"	18px;%;&;';(;@;[ o;;iß; ;!;"["height;#i ;o;$;"	17px;%;&;';(;@;[ o;;i®; ;!;"["background;#i ;o;)
+;*[o;$
+;i®;"/images/heart.png;{ ;%;+;';(;i®;""url;@Ê;';(;@;[ o;2;T;i´;#i ;@;3["
+.when;[o;;i¨; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i≠; ;!;"["padding-left;#i ;o;$;"8px;%;&;';(;@;[ o;;iÆ; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iØ; ;!;"["
+width;#i ;o;$;"
+190px;%;&;';(;@;[ o;;i∞; ;!;"["margin-top;#i ;o;$;"7px;%;&;';(;@;[ o;;i±; ;!;"["
+color;#i ;o;$;"
+black;%;&;';(;@;[ o;;i≤; ;!;"["font-size;#i ;o;$;"	12px;%;&;';(;@;[ o;2;T;iµ;#i ;@;3[".bottom;[
+o;;i∂; ;!;"["height;#i ;o;$;"
+274px;%;&;';(;@;[ o;2;T;i∏;#i ;@;3["#tweet_comment;[o;;iπ; ;!;"["margin-left;#i ;o;$;"
+230px;%;&;';(;@;[ o;;i∫; ;!;"["height;#i ;o;$;"
+150px;%;&;';(;@;[ o;2;T;iª;#i ;@;3["	form;[o;;iº; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;iø;#i ;@;3["#comment_extra;[o;;i¿; ;!;"["
+width;#i ;o;$;"
+350px;%;&;';(;@;[ o;2;T;i¡;#i ;@;3["#counter;[o;;i¬; ;!;"["
+float;#i ;o;$;"
+right;%;&;';(;@;[ o;;i√; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;i«;#i ;@;3["#user_name;[	o;;i»; ;!;"["font-family;#i ;o;$;""DINConBol";%;&;';(;@;[ o;;i…; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;i ; ;!;"["
+color;#i ;o;$;"#1f9fd1;%;&;';(;@;[ o;;iÀ; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;iŒ;#i ;@;3["#comment_area;[o;2;T;iœ;#i ;@;3["#text_area;[o;;i–; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;;i—; ;!;"["top-margin;#i ;o;4;i—;5[ ;6["px;iÁ;{ ;7"
+-20px;';(;@;[ o;;i“; ;!;"["vertical-align;#i ;o;$;"top;%;&;';(;@;[ o;2;T;i◊;#i ;@;3["#disclaimer_text;[	o;;iÿ; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iŸ; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;i⁄; ;!;"["
+color;#i ;o;$;"#000000;%;&;';(;@;[ o;;i€; ;!;"["display;#i ;o;$;"
+block;%;&;';(;@;[ o;2;T;i‡;#i ;@;3[".popular_title;[o;;i·; ;!;"["font-family;#i ;o;$;""DINCond";%;&;';(;@;[ o;;i‚; ;!;"["font-size;#i ;o;$;"	19px;%;&;';(;@;[ o;;i„; ;!;"["font-weight;#i ;o;$;"	bold;%;&;';(;@;[ o;;i‰; ;!;"["
+width;#i ;o;$;"
+200px;%;&;';(;@;[ o;;iÂ; ;!;"["padding-left;#i ;o;$;"	41px;%;&;';(;@;[ o;;iÊ; ;!;"["
+color;#i ;o;$;"#3f3f3f;%;&;';(;@;[ o;2;T;iÍ;#i ;@;3[".popular_divider;[o;;iÎ; ;!;"["
+width;#i ;o;$;"
+863px;%;&;';(;@;[ o;;iÏ; ;!;"["height;#i ;o;$;"8px;%;&;';(;@;[ o;;iÌ; ;!;"["margin-top;#i ;o;$;"8px;%;&;';(;@;[ o;;iÓ; ;!;"["background-color;#i ;o;$;"#dadada;%;&;';(;@;[ o;;iÔ; ;!;"["margin-left;#i ;o;$;"	41px;%;&;';(;@;[ o;>
+;*[	o;4;i;5[ ;6["px;i;{ ;7"2px;';(o;4;i;5[ ;6["px;i;@˚;7"2px;';(o;4;i;5[ ;6["px;i;@˚;7"2px;';(o;4;i;5[ ;6["px;i;@˚;7"2px;';(;i;""border-radius;@;[ o;2;T;iÙ;#i ;@;3[".popular_video;[o;;iı; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iˆ; ;!;"["
+width;#i ;o;$;"
+350px;%;&;';(;@;[ o;;i˜; ;!;"["height;#i ;o;$;"
+103px;%;&;';(;@;[ o;;i¯; ;!;"["margin-left;#i ;o;$;"	41px;%;&;';(;@;[ o;;i˘; ;!;"["margin-top;#i ;o;$;"	12px;%;&;';(;@;[ o;2;T;i˚;#i ;@;3[".thumbnail;[o;;i¸; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i˝; ;!;"["
+width;#i ;o;$;"
+134px;%;&;';(;@;[ o;;i˛; ;!;"["height;#i ;o;$;"	93px;%;&;';(;@;[ o;;iˇ; ;!;"["overflow;#i ;o;$;"hidden;%;&;';(;@;[ o;;i ; ;!;"["border;#i ;o;$;"2px solid #cdcdcd;%;&;';(;@;[ o;2;T;i;#i ;@;3["img;[o;;i; ;!;"["
+width;#i ;o;$;"
+134px;%;&;';(;@;[ o;2;T;i;#i ;@;3[".title;[o;;i; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i	; ;!;"["padding-left;#i ;o;$;"8px;%;&;';(;@;[ o;;i
+; ;!;"["
+width;#i ;o;$;"
+190px;%;&;';(;@;[ o;;i; ;!;"["font-family;#i ;o;$;"Georgia;%;&;';(;@;[ o;;i; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;i; ;!;"["
+color;#i ;o;$;"#9e3f84;%;&;';(;@;[ o;2;T;i;#i ;@;3[".by;[o;;i; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i; ;!;"["padding-left;#i ;o;$;"8px;%;&;';(;@;[ o;;i; ;!;"["
+width;#i ;o;$;"
+190px;%;&;';(;@;[ o;;i; ;!;"["margin-top;#i ;o;$;"3px;%;&;';(;@;[ o;;i; ;!;"["
+color;#i ;o;$;"#5b5b5b;%;&;';(;@;[ o;;i; ;!;"["font-size;#i ;o;$;"	15px;%;&;';(;@;[ o;2;T;i;#i ;@;3["a;[o;;i; ;!;"["
+color;#i ;o;$;"#058ec5;%;&;';(;@;[ o;;i; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i;#i ;@;3["a:hover;[o;;i; ;!;"["text-decoration;#i ;o;$;"underline;%;&;';(;@;[ o;2;T;i#;#i ;@;3[".views;[	o;;i$; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i%; ;!;"["
+width;#i ;o;$;"
+190px;%;&;';(;@;[ o;;i&; ;!;"["padding-left;#i ;o;$;"8px;%;&;';(;@;[ o;;i'; ;!;"["margin-top;#i ;o;$;"	15px;%;&;';(;@;[ o;2;T;i.;#i ;@;3["	.top;[o;;i/; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;i1; ;!;"["padding-top;#i ;o;$;"	20px;%;&;';(;@;[ o;2;T;i2;#i ;@;3["#home_page;[o;;i3; ;!;"["padding-top;#i ;o;$;"	60px;%;&;';(;@;[ o;2;T;i6;#i ;@;3["#user_videos;[o;2;T;i7;#i ;@;3["#user_info;[o;;i8; ;!;"["margin-right;#i ;o;$;"	20px;%;&;';(;@;[ o;;i9; ;!;"["margin-left;#i ;o;$;"	20px;%;&;';(;@;[ o;;i:; ;!;"["height;#i ;o;$;"	50px;%;&;';(;@;[ o;2;T;i<;#i ;@;3["#user_image;[o;;i=; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;i>; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i?; ;!;"["margin-right;#i ;o;$;"5px;%;&;';(;@;[ o;2;T;iB;#i ;@;3["#user_name;[	o;;iC; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iD; ;!;"["font-size;#i ;o;$;"	15px;%;&;';(;@;[ o;;iE; ;!;"["
+color;#i ;o;$;"#1f9fd1;%;&;';(;@;[ o;2;T;iG;#i ;@;3["a;[o;;iH; ;!;"["
+color;#i ;o;$;"#1f9fd1;%;&;';(;@;[ o;;iI; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;iM;#i ;@;3["#user_stats;[	o;;iN; ;!;"["margin-top;#i ;o;$;"	20px;%;&;';(;@;[ o;;iO; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;iP; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;iQ; ;!;"["
+color;#i ;o;$;"#000000;%;&;';(;@;[ o;2;T;iV;#i ;@;3["#videos_display;[o;;iX; ;!;"["filter;#i ;o;$
+;iX;"_progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff');{ ;%;&;';(;@;[ o;?;@0;iX;"/* for IE */;A[ ;@;[ o;;iY; ;!;"["background;#i ;o;)
+;*[
+o;$
+;iY;"linear;{ ;%;&;';(o;,;-o;$
+;iY;"top;@ä
+;%;&;';(;iY;.o;$
+;iY;"	left;@ä
+;%;&;';(;@ä
+;/;0;';(o;,;-o;$
+;iY;"bottom;@ä
+;%;&;';(;iY;.o;$
+;iY;"	left;@ä
+;%;&;';(;@ä
+;/;0;';(o;)
+;*[o;8
+;iY;0;@ä
+;9{	;:i;;iÛ;<iÛ;=iÛ;';(;iY;""	from;@ä
+;';(o;)
+;*[o;8
+;iY;0;@ä
+;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iY;""to;@ä
+;';(;iY;""-webkit-gradient;@ä
+;';(;@;[ o;?;@0;iY;"/* for webkit browsers */;A[ ;@;[ o;;iZ; ;!;"["background;#i ;o;)
+;*[o;$
+;iZ;"top;{ ;%;&;';(o;8
+;iZ;0;@¨
+;9{	;:i;;iÛ;<iÛ;=iÛ;';(o;8
+;iZ;0;@¨
+;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iZ;""-moz-linear-gradient;@¨
+;';(;@;[ o;?;@0;iZ;"/* for firefox 3.6+ */;A[ ;@;[ o;;i[; ;!;"["padding-top;#i ;o;$;"	20px;%;&;';(;@;[ o;;i\; ;!;"["padding-left;#i ;o;$;"	20px;%;&;';(;@;[ o;;i]; ;!;"["padding-right;#i ;o;$;"	20px;%;&;';(;@;[ o;2;T;i_;#i ;@;3[".video_list_header;[o;;i`; ;!;"["background-color;#i ;o;$;"#a9e7ff;%;&;';(;@;[ o;;ia; ;!;"["
+color;#i ;o;$;"#0b5572;%;&;';(;@;[ o;;ib; ;!;"["display;#i ;o;$;"
+block;%;&;';(;@;[ o;;id; ;!;"["font-family;#i ;o;$;""DINConMed";%;&;';(;@;[ o;;ie; ;!;"["font-size;#i ;o;$;"	24px;%;&;';(;@;[ o;;ig; ;!;"["padding-top;#i ;o;$;"	10px;%;&;';(;@;[ o;;ih; ;!;"["padding-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;;ii; ;!;"["padding-left;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;ir;#i ;@;3["#video_show;[	o;2;T;is;#i ;@;3["#player_wrapper;[o;;it; ;!;"["filter;#i ;o;$
+;it;"_progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff');{ ;%;&;';(;@;[ o;?;@0;it;"/* for IE */;A[ ;@;[ o;;iu; ;!;"["background;#i ;o;)
+;*[
+o;$
+;iu;"linear;{ ;%;&;';(o;,;-o;$
+;iu;"top;@;%;&;';(;iu;.o;$
+;iu;"	left;@;%;&;';(;@;/;0;';(o;,;-o;$
+;iu;"bottom;@;%;&;';(;iu;.o;$
+;iu;"	left;@;%;&;';(;@;/;0;';(o;)
+;*[o;8
+;iu;0;@;9{	;:i;;iÛ;<iÛ;=iÛ;';(;iu;""	from;@;';(o;)
+;*[o;8
+;iu;0;@;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iu;""to;@;';(;iu;""-webkit-gradient;@;';(;@;[ o;?;@0;iu;"/* for webkit browsers */;A[ ;@;[ o;;iv; ;!;"["background;#i ;o;)
+;*[o;$
+;iv;"top;{ ;%;&;';(o;8
+;iv;0;@9;9{	;:i;;iÛ;<iÛ;=iÛ;';(o;8
+;iv;0;@9;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iv;""-moz-linear-gradient;@9;';(;@;[ o;?;@0;iv;"/* for firefox 3.6+ */;A[ ;@;[ o;;iw; ;!;"["padding-top;#i ;o;$;"	40px;%;&;';(;@;[ o;;ix; ;!;"["padding-bottom;#i ;o;$;"	40px;%;&;';(;@;[ o;;iy; ;!;"["padding-left;#i ;o;$;"
+290px;%;&;';(;@;[ o;2;T;i|;#i ;@;3["#tweet_form;[o;;i}; ;!;"["margin-left;#i ;o;4;i};5[ ;6["px;iŒ;{ ;7"
+-45px;';(;@;[ o;2;T;iÇ;#i ;@;3["#processing_video;[o;;iÉ; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;iÑ; ;!;"["font-family;#i ;o;$;"Georgia;%;&;';(;@;[ o;;iÖ; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;iÜ; ;!;"["
+color;#i ;o;$;"#9e3f84;%;&;';(;@;[ o;;iá; ;!;"["padding-top;#i ;o;$;"
+150px;%;&;';(;@;[ o;;ià; ;!;"["filter;#i ;o;$
+;ià;"_progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#ffffff');{ ;%;&;';(;@;[ o;?;@0;ià;"/* for IE */;A[ ;@;[ o;;iâ; ;!;"["background;#i ;o;)
+;*[
+o;$
+;iâ;"linear;{ ;%;&;';(o;,;-o;$
+;iâ;"top;@ò;%;&;';(;iâ;.o;$
+;iâ;"	left;@ò;%;&;';(;@ò;/;0;';(o;,;-o;$
+;iâ;"bottom;@ò;%;&;';(;iâ;.o;$
+;iâ;"	left;@ò;%;&;';(;@ò;/;0;';(o;)
+;*[o;8
+;iâ;0;@ò;9{	;:i;;iÛ;<iÛ;=iÛ;';(;iâ;""	from;@ò;';(o;)
+;*[o;8
+;iâ;0;@ò;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iâ;""to;@ò;';(;iâ;""-webkit-gradient;@ò;';(;@;[ o;?;@0;iâ;"/* for webkit browsers */;A[ ;@;[ o;;iä; ;!;"["background;#i ;o;)
+;*[o;$
+;iä;"top;{ ;%;&;';(o;8
+;iä;0;@∫;9{	;:i;;iÛ;<iÛ;=iÛ;';(o;8
+;iä;0;@∫;9{	;:i;;iˇ;<iˇ;=iˇ;';(;iä;""-moz-linear-gradient;@∫;';(;@;[ o;?;@0;iä;"/* for firefox 3.6+ */;A[ ;@;[ o;2;T;iç;#i ;@;3["#display_twitter_text;[o;;ié; ;!;"["font-family;#i ;o;$;"Georgia;%;&;';(;@;[ o;;iè; ;!;"["font-size;#i ;o;$;"	20px;%;&;';(;@;[ o;;iê; ;!;"["
+color;#i ;o;$;"#9e3f84;%;&;';(;@;[ o;;ië; ;!;"["text-align;#i ;o;$;"center;%;&;';(;@;[ o;;ií; ;!;"["margin-left;#i ;o;4;ií;5[ ;6["px;i˛Ë˛;{ ;7"-280px;';(;@;[ o;;iì; ;!;"["margin-bottom;#i ;o;$;"	20px;%;&;';(;@;[ o;2;T;ió;#i ;@;3["#video_info;[o;;iô; ;!;"["margin-right;#i ;o;$;"	50px;%;&;';(;@;[ o;2;T;iö;#i ;@;3["#user_image;[o;;iõ; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;iú; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iù; ;!;"["height;#i ;o;$;"	auto;%;&;';(;@;[ o;;iû; ;!;"["margin-left;#i ;o;$;"	20px;%;&;';(;@;[ o;;iü; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;;i†; ;!;"["margin-bottom;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i°;#i ;@;3["img;[o;;i¢; ;!;"["border;#i ;o;$;"5px solid #cdcdcd;%;&;';(;@;[ o;2;T;iß;#i ;@;3["#video_age;[	o;;i®; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i©; ;!;"["font-size;#i ;o;$;"	10px;%;&;';(;@;[ o;;i™; ;!;"["
+color;#i ;o;$;"#000000;%;&;';(;@;[ o;;i´; ;!;"["margin-bottom;#i ;o;$;"	15px;%;&;';(;@;[ o;2;T;iÆ;#i ;@;3["#video_title;[o;;iØ; ;!;"["font-family;#i ;o;$;"Georgia;%;&;';(;@;[ o;;i∞; ;!;"["font-size;#i ;o;$;"	15px;%;&;';(;@;[ o;;i±; ;!;"["
+color;#i ;o;$;"#9e3f84;%;&;';(;@;[ o;2;T;i¥;#i ;@;3["#video_byline;[	o;;iµ; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i∂; ;!;"["font-size;#i ;o;$;"	11px;%;&;';(;@;[ o;;i∑; ;!;"["
+color;#i ;o;$;"#5b5b5b;%;&;';(;@;[ o;2;T;iπ;#i ;@;3["a;[o;;i∫; ;!;"["
+color;#i ;o;$;"#058ec5;%;&;';(;@;[ o;;iª; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i¿;#i ;@;3["#video_likes;[	o;;i¡; ;!;"["font-family;#i ;o;$;"
+Arial;%;&;';(;@;[ o;;i¬; ;!;"["font-size;#i ;o;$;"	12px;%;&;';(;@;[ o;;i√; ;!;"["
+color;#i ;o;$;"#000000;%;&;';(;@;[ o;2;T;iƒ;#i ;@;3["a;[o;;i≈; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i…;#i ;@;3["#video_screen;[	o;;i ; ;!;"["
+float;#i ;o;$;"
+right;%;&;';(;@;[ o;;iÀ; ;!;"["margin-top;#i ;o;$;"0px;%;&;';(;@;[ o;;iÃ; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;;iÕ; ;!;"["margin-right;#i ;o;$;"	10px;%;&;';(;@;[ o;2;T;i“;#i ;@;3["
+.left;[
+o;;i”; ;!;"["
+float;#i ;o;$;"	left;%;&;';(;@;[ o;;i‘; ;!;"["
+width;#i ;o;$;"
+333px;%;&;';(;@;[ o;;i’; ;!;"["height;#i ;o;$;"
+445px;%;&;';(;@;[ o;;i÷; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;2;T;iÿ;#i ;@;3[".camera;[o;;iŸ; ;!;"["margin-bottom;#i ;o;4;iŸ;5[ ;6["px;iı;{ ;7"	-6px;';(;@;[ o;;i⁄; ;!;"["z-index;#i ;o;$;"1;%;&;';(;@;[ o;;i€; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;2;T;iﬂ;#i ;@;3["#user_show;[
+o;2;T;i·;#i ;@;3["#framey_content;[o;;i‚; ;!;"["margin-top;#i ;o;$;"	45px;%;&;';(;@;[ o;;iÂ; ;!;"["margin-left;#i ;o;$;"
+290px;%;&;';(;@;[ o;2;T;iÊ;#i ;@;3["#recorder_post_container;[o;;iÁ; ;!;"["height;#i ;o;$;"
+400px;%;&;';(;@;[ o;2;T;iÍ;#i ;@;3["#framey_recorder;[o;;iÎ; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;?;@0;iÏ;"!/*          height: 400px;*/;A[ ;@;[ o;;iÌ; ;!;"["overflow;#i ;o;$;"hidden;%;&;';(;@;[ o;2;T;i;#i ;@;3["#instructions;[o;;iÒ; ;!;"["text-align;#i ;o;$;"	left;%;&;';(;@;[ o;;iÚ; ;!;"["margin-left;#i ;o;4;iÚ;5[ ;6["px;i∞;{ ;7"
+-75px;';(;@;[ o;;iÛ; ;!;"["font-size;#i ;o;$;"	30px;%;&;';(;@;[ o;;iÙ; ;!;"["font-family;#i ;o;$;"""CTMercuriusStd-MediumItalic";%;&;';(;@;[ o;2;T;iˆ;#i ;@;3[".number;[o;;i˜; ;!;"["
+color;#i ;o;$;"#a2a2a2;%;&;';(;@;[ o;;i¯; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;i˚;#i ;@;3[".pink_text;[o;;i¸; ;!;"["
+color;#i ;o;$;"#cc53ab;%;&;';(;@;[ o;;i˝; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;?;@0;i˛;"/*            cc53ab*/;A[ ;@;[ o;2;T;i;#i ;@;3[".dark_text;[o;;i; ;!;"["
+color;#i ;o;$;"#505050;%;&;';(;@;[ o;;i; ;!;"["display;#i ;o;$;"inline;%;&;';(;@;[ o;2;T;i
+;#i ;@;3[".right;[o;;i; ;!;"["
+width;#i ;o;$;"
+560px;%;&;';(;@;[ o;;i; ;!;"["
+float;#i ;o;$;"
+right;%;&;';(;@;[ o;;i; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;2;T;i;#i ;@;3[".easily_record;[o;;i; ;!;"["text-shadow;#i ;o;$;"#ABABAB 0px 0px 5px;%;&;';(;@;[ o;;i; ;!;"["font-family;#i ;o;$;"""CTMercuriusStd-MediumItalic";%;&;';(;@;[ o;;i; ;!;"["font-size;#i ;o;$;"	60px;%;&;';(;@;[ o;;i; ;!;"["
+color;#i ;o;$;"#cc53ab;%;&;';(;@;[ o;;i; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;i; ;!;"["
+width;#i ;o;$;"
+475px;%;&;';(;@;[ o;;i; ;!;"["position;#i ;o;$;"relative;%;&;';(;@;[ o;;i; ;!;"["line-height;#i ;o;$;"	51px;%;&;';(;@;[ o;2;T;i;#i ;@;3[".twitter_bird;[o;;i; ;!;"["
+width;#i ;o;$;"	41px;%;&;';(;@;[ o;;i; ;!;"["height;#i ;o;$;"	26px;%;&;';(;@;[ o;;i; ;!;"["background;#i ;o;,;-o;$
+;i;"no-repeat;{ ;%;&;';(;i;.o;)
+;*[o;$
+;i;"/images/twitter_bird.png;@›;%;+;';(;i;""url;@›;';(;@›;/;0;';(;@;[ o;;i; ;!;"["position;#i ;o;$;"absolute;%;&;';(;@;[ o;;i; ;!;"["
+right;#i ;o;$;"	82px;%;&;';(;@;[ o;;i ; ;!;"["bottom;#i ;o;$;"	15px;%;&;';(;@;[ o;2;T;i#;#i ;@;3[".simplest_way;[o;;i$; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;i%; ;!;"["margin-top;#i ;o;$;"5px;%;&;';(;@;[ o;;i&; ;!;"["font-family;#i ;o;$;""DINConLig";%;&;';(;@;[ o;;i'; ;!;"["font-size;#i ;o;$;"	25px;%;&;';(;@;[ o;;i(; ;!;"["
+color;#i ;o;$;"#949494;%;&;';(;@;[ o;2;T;i*;#i ;@;3["	span;[o;;i+; ;!;"["
+color;#i ;o;$;"
+black;%;&;';(;@;[ o;2;T;i.;#i ;@;3["a;[o;;i/; ;!;"["
+color;#i ;o;$;"#199acd;%;&;';(;@;[ o;;i0; ;!;"["text-decoration;#i ;o;$;"	none;%;&;';(;@;[ o;2;T;i3;#i ;@;3["a:hover;[o;;i4; ;!;"["text-decoration;#i ;o;$;"underline;%;&;';(;@;[ o;2;T;i7;#i ;@;3[".get_started;[
+o;;i8; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;i9; ;!;"["margin-top;#i ;o;$;"	66px;%;&;';(;@;[ o;;i:; ;!;"["font-family;#i ;o;$;""DINConBol";%;&;';(;@;[ o;;i;; ;!;"["font-size;#i ;o;$;"	25px;%;&;';(;@;[ o;;i<; ;!;"["font-weight;#i ;o;$;"	bold;%;&;';(;@;[ o;2;T;i?;#i ;@;3[".dont_forget;[
+o;;i@; ;!;"["
+width;#i ;o;$;"	100%;%;&;';(;@;[ o;;iA; ;!;"["font-family;#i ;o;$;""DINCond";%;&;';(;@;[ o;;iB; ;!;"["font-size;#i ;o;$;"	15px;%;&;';(;@;[ o;;iC; ;!;"["font-weight;#i ;o;$;"	bold;%;&;';(;@;[ o;;iD; ;!;"["
+color;#i ;o;$;"#9d9d9d;%;&;';(;@;[ o;2;T;iG;#i ;@;3[".sign_up_button;[o;;iH; ;!;"["margin-top;#i ;o;$;"	36px;%;&;';(;@;[ o;;iI; ;!;"["cursor;#i ;o;$;"pointer;%;&;';(;@;[ o;;iJ; ;!;"["
+width;#i ;o;$;"
+445px;%;&;';(;@;[ o;;iK; ;!;"["height;#i ;o;$;"
+141px;%;&;';(;@;[ o;2;T;iL;#i ;@;3["a;[o;;iL; ;!;"["background;#i ;o;,;-o;$
+;iL;"no-repeat;{ ;%;&;';(;iL;.o;)
+;*[o;$
+;iL;"/images/twitter_button.png;@¶;%;+;';(;iL;""url;@¶;';(;@¶;/;0;';(;@;[ o;;iM; ;!;"["background;#i ;o;,;-o;$
+;iM;"no-repeat;{ ;%;&;';(;iM;.o;)
+;*[o;$
+;iM;"/images/twitter_button.png;@≥;%;+;';(;iM;""url;@≥;';(;@≥;/;0;';(;@;[ o;2;T;iR;#i ;@;3[".sign_up_button:hover;[
+o;;iS; ;!;"["margin-top;#i ;o;$;"	36px;%;&;';(;@;[ o;;iT; ;!;"["cursor;#i ;o;$;"pointer;%;&;';(;@;[ o;;iU; ;!;"["
+width;#i ;o;$;"
+445px;%;&;';(;@;[ o;;iV; ;!;"["height;#i ;o;$;"
+141px;%;&;';(;@;[ o;;iW; ;!;"["background;#i ;o;,;-o;$
+;iW;"no-repeat;{ ;%;&;';(;iW;.o;)
+;*[o;$
+;iW;"(/images/inverted_twitter_button.png;@‹;%;+;';(;iW;""url;@‹;';(;@‹;/;0;';(;@;[ 

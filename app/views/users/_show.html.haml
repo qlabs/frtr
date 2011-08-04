@@ -1,0 +1,19 @@
+/ #framey_recorder
+/   = render_recorder({ :id => "recorder",
+/                       :max_time => 60,
+/                       :session_data => {:user_uid => @user.uid, :video_uid => @video_uid} })
+/ 
+/ #framey_post
+/   You're video is being published!  Now, share it on Twitter!
+/   #tweet_form
+/     - form_tag('/users', :remote => true, :method => :get) do
+/       = text_area_tag 'twitter_text'
+/       %span#counter
+/       #follow_checkbox
+/         = check_box_tag("follow")
+/         Follow Frittr on Twitter
+/   
+/       / %a{:onclick => "post_form(this)", :href => "#"} Submit  
+/       %a{:href => "javascript: tweet_video()"} Tweet my video!
+/       %a{:href => "javascript: new_video()"} Record another video
+/       / = submit_tag("Record another video!")

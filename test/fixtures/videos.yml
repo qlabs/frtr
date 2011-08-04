@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  framey_name: MyString
+  framey_video_url: MyString
+  framey_thumbnail_url: MyString
+  views: 1
+  likes: 1
+
+two:
+  framey_name: MyString
+  framey_video_url: MyString
+  framey_thumbnail_url: MyString
+  views: 1
+  likes: 1

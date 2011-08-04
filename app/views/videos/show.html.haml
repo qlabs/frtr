@@ -1,0 +1,51 @@
+.top
+  #video_show
+    #video_info
+      #user_image
+        = image_tag @video.user.twitter_profile_image_url
+      #video_screen
+        = image_tag "/images/screen.png"
+      #video_byline
+        by
+        %a{:href => "http://www.twitter.com/#{@video.user.twitter_handle}"}
+          @#{@video.user.twitter_handle}
+      #video_age
+        = time_ago_in_words @video.created_at
+        ago
+      .clear
+
+    - if @video.framey_name
+      #player_wrapper
+        %span 
+          = render_player({ :video_url => video_source_url(@video.uid), :thumbnail_url => video_thumbnail_url(@video.uid),
+      })
+        %br
+        %br
+        #display_twitter_text
+          =@video.twitter_text
+        #tweet_prompt
+          @reply about this video!
+        #tweet_form
+          - text = "@#{@video.user.twitter_handle} love your video!"
+          - form_tag() do
+            = text_area_tag( 'twitter_reply_text', text, :class => "twitter_text_area")
+          .tweet_button  
+            %a.send_tweet_link.popupwindow{ :href => "http://twitter.com/share", :id => "send_tweet_link", :rel => "height:250, width:450" }
+              %img{:src => "/images/bird_button.png"}
+              .tweet_button_text
+                Press to Tweet
+          #tweet_extra
+            %span{:style => "float: left"}
+              .num
+                Likes: 
+                %span{:id => "like_count_"+@video.uid}
+                  #{@video.likes} &nbsp;
+            %a{:href => "javascript:like_video('#{@video.uid}')",:id => "like_video_link"}
+              .heart
+            %span.counter{:id => "reply_counter"}
+    -else
+      #processing_video
+        This video is being processed, please come reload the page in a few minutes.    
+  .clear
+
+.bottom

@@ -1,0 +1,9 @@
+.popular_video
+  .thumbnail
+    %a{:href => "/videos/#{video.uid}"}
+      %img{:src => video_thumbnail_url(video.uid)}
+  .by by #{link_to(video.user.twitter_handle,video.user.twitter_url)}
+  .when= formatted_record_date(video.created_at)
+  .views
+    .num Likes: #{video.likes} &nbsp;
+    .num Views: #{video.views}

@@ -1,0 +1,24 @@
+test:
+  api_host: http://framey.com
+  run_env: production
+  api_key: 
+  secret: 
+
+development: 
+  api_host: http://framey.com
+  run_env: production
+  api_key: 
+  secret:   
+
+
+staging:
+  api_host: http://framey.com
+  run_env: production
+  api_key: 
+  secret: 
+    
+production:
+  api_host: http://framey.com
+  run_env: production
+  api_key: 
+  secret: 
